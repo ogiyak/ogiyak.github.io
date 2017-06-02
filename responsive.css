@@ -25,7 +25,14 @@ h1, h2, h3, h4{
 	position: relative;
 	/*make 3 parts: right center left*/
 	justify-content: space-between;
-	z-index: 1;
+	z-index: 1;  
+}
+.navbar *{
+	/*disable text select*/	
+	-webkit-user-select: none;  /* Chrome 49+ */
+	-moz-user-select: none;     /* Firefox 43+ */
+	-ms-user-select: none;      /* No support yet */
+	user-select: none;          /* Likely future */
 }
 .navbar span{
 	padding: 5px 15px 5px 15px;
