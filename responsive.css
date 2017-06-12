@@ -50,6 +50,7 @@ nav span{
 	text-decoration: none;
 	color: white;
 	transition: font-size .2s;
+	-webkit-transition: font-size .2s;
 }
 .dropdown a:hover{
 	font-size: 1.1em;
@@ -68,6 +69,7 @@ nav span{
 	display: block;
 }
 .dropdown span{
+	-webkit-transition: background-color 0.25s;
 	transition: background-color 0.25s;
 }
 .dropdown:hover span{
@@ -120,24 +122,25 @@ header.top-header{
 }
 /*home button src w3school*/
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 201; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    width: 68px; height: 68px;
-    border-radius: 50%; /* Rounded corners */
-    transition: background .3s, color .3s;
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 201; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	width: 68px; height: 68px;
+	border-radius: 50%; /* Rounded corners */
+	-webkit-transition: background .3s, color .3s;
+	transition: background .3s, color .3s;
 }
 #myBtn:hover {
-   background: white;
-   color: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+	background: white;
+	color: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
 }
 /* for contents section*/
 .item{
@@ -175,20 +178,20 @@ header.top-header{
 	text-align: center;
 }
 .grad-1{
-  background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
-  color: white;
+	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
+	color: white;
 }
 .grad-2{
-  background: rgb(230, 230, 230); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* Standard syntax */
-  color: black;
+	background: rgb(230, 230, 230); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* Standard syntax */
+	color: black;
 }
 .grad-1 a{
 	color: white;
@@ -234,32 +237,32 @@ header.top-header{
 	h2{font-size: 1.2em}
 	h3{font-size: 1.1em}
 	h4{font-size: 1em}
-    nav{
-    	height: auto;
-    	width: 100%;
-    	padding: 1em 1em;
-    	justify-content: center;
-    	position: relative;
-    	/*coloumn orientation*/
-    	flex-direction: column;
-    }
-    #logo{
-    	margin: 0 0 15px 0;
-    }
-    .row{
-    	flex-direction: column;
-    	align-items: center;
-    }
-    .item{
-    	flex-direction: column;
-    }
-    .aligner{
-    	display: block;
-    }
-    #pp{
-    	margin: 0;
-    }
-    .nav-bot{
-    	display: none;
-    }
+	nav{
+		height: auto;
+		width: 100%;
+		padding: 1em 1em;
+		justify-content: center;
+		position: relative;
+		/*coloumn orientation*/
+		flex-direction: column;
+	}
+	#logo{
+		margin: 0 0 15px 0;
+	}
+	.row{
+		flex-direction: column;
+		align-items: center;
+	}
+	.item{
+		flex-direction: column;
+	}
+	.aligner{
+		display: block;
+	}
+	#pp{
+		margin: 0;
+	}
+	.nav-bot{
+		display: none;
+	}
 }
