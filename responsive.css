@@ -1,17 +1,22 @@
 body{
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	margin: 0;
 	overflow-x: hidden;
-	background-color: rgba(0, 78, 203, 1);
 }
-h1{
-	font-size: 3em;
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
 }
-h1, h2, h3, h4{
-	color: white;
+h1{font-size: 2em}
+hr{
+	-webkit-border-image: -webkit-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
+	-o-border-image: -o-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
+	-moz-border-image: -moz-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
+	border-image: linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* Standard syntax */
+	border-image-slice: 1;
 }
-.navbar{
+nav{
 	display: flex;
 	align-items: center;
 	top: 0;
@@ -20,25 +25,23 @@ h1, h2, h3, h4{
 	padding: 2em 2em;
 	height: 48px;
 	width: 100%;
-	font-size: 1.2em;
 	color: white;
 	position: relative;
 	/*make 3 parts: right center left*/
 	justify-content: space-between;
-	z-index: 1;  
+	z-index: 200;  
 }
-.navbar *{
+nav *{
 	/*disable text select*/	
-	-webkit-user-select: none;  /* Chrome 49+ */
-	-moz-user-select: none;     /* Firefox 43+ */
-	-ms-user-select: none;      /* No support yet */
-	user-select: none;          /* Likely future */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-.navbar span{
-	padding: 5px 15px 5px 15px;
-	margin-left: 1em;
-	border: 2px solid rgba(255,255,255,1);
-	border-radius: 2em;
+nav span{
+	padding: 5px 15px;
+	border: 2px solid white;
+	border-radius: 5px;
 }
 .dropdown{
 	display: inline-block;
@@ -46,6 +49,7 @@ h1, h2, h3, h4{
 .dropdown a{
 	text-decoration: none;
 	color: white;
+	transition: font-size .2s;
 }
 .dropdown a:hover{
 	font-size: 1.1em;
@@ -54,8 +58,7 @@ h1, h2, h3, h4{
 	display: none;
 	position: absolute;
 	padding: 10px 10px;
-	margin-left: 1em; 
-	z-index: 1;
+	z-index: 201;
 	box-sizing: border-box;
 }
 .dropdown:hover{
@@ -70,6 +73,13 @@ h1, h2, h3, h4{
 .dropdown:hover span{
 	background-color: white;
 	color: black;
+}
+header{
+	padding: 0 1em;
+}
+header.top-header{
+	height: 100vh;
+	color: white;
 }
 /*special case image & atmosphere*/
 .aligner{
@@ -87,89 +97,169 @@ h1, h2, h3, h4{
 	max-width: 100%;
 }
 #pp{
-	max-width: 75%;
-	border-radius: 1em;
-	margin: 1.5em;
+	max-width: 70%;
 }
 #pp #img1{
 	opacity: 0.7;
-	border-radius: 1em;
 }
 #logo{
 	font-family: 'Comfortaa', cursive;
-	font-size: 2em;
+	font-size: 1.5em;
 	border: none;
 	margin-left: 0;
 }
-/*responsive*/
+.nav-bot{
+	line-height: initial;
+	-webkit-transition: line-height 2s;
+	transition: line-height 2s;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+.nav-bot a:hover{
+	line-height: 5em;
+}
+/*home button src w3school*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 201; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    width: 68px; height: 68px;
+    border-radius: 50%; /* Rounded corners */
+    transition: background .3s, color .3s;
+}
+#myBtn:hover {
+   background: white;
+   color: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+}
+/* for contents section*/
+.item{
+	min-width: 245px;
+	min-height: 245px;
+	font-size: 12px;
+	padding-top: 100%;
+	margin: 2em;
+	box-shadow: 0 5px 1.5em rgba(0,0,0,.3);
+	border: 1em solid transparent; 
+	-webkit-border-image: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
+	-o-border-image: -o-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
+	-moz-border-image: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
+	border-image: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
+	border-image-slice: 1;
+	display: flex;
+	flex-direction: column;
+}
+.item-list-top{
+	flex: 1;
+	text-align: right;
+}
+.item-list-mid{
+	flex: 2;
+}
+.item-list-bot{
+	flex: 1;
+}
+.item-img{
+	padding: 1em;
+	box-shadow: 0 5px 1em rgba(0,0,0,.3);
+}
+.center{
+	align-items: center;
+	text-align: center;
+}
+.grad-1{
+  background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
+  color: white;
+}
+.grad-2{
+  background: rgb(230, 230, 230); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* Standard syntax */
+  color: black;
+}
+.grad-1 a{
+	color: white;
+	text-decoration: none;
+}
+.grad-2 a{
+	color: black;
+	text-decoration: none;
+}
+/*responsive - using flex*/
 /*desktop*/
 *{
 	box-sizing: border-box;
 }
 .container{
-	height: 100%;
 	width: 100%
 	margin: 0;
-	padding: 0;
+	padding: 1em;
 }
 .row{
-	max-width: 100%
-	height: auto;
+	min-height: 1em;
+	height: calc(100%-48px);
 	margin: 0;
 	padding: 0;
 	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
 }
 .col{
 	padding: 15px;
-	flex-direction: row;
+}
+.col *{
+	max-width: 100%;
 }
 .col-1{flex: 1}
 .col-2{flex: 2;}
 .col-3{flex: 3;}
 .col-4{flex: 4;}
 .col-5{flex: 5;}
-.col-6{flex: 6;}
-.col-7{flex: 7;}
-.col-8{flex: 8;}
-.col-9{flex: 9;}
-.col-10{flex: 10;}
-.col-11{flex: 11;}
-.col-12{flex: 12;}	
-.col *{
-	max-width: 100%;
-}
 /*mobile phones: */
 @media only screen and (max-width: 768px) {
-	h3, h4{font-weight: 200;}
 	h1{font-size: 1.3em}
 	h2{font-size: 1.2em}
 	h3{font-size: 1.1em}
 	h4{font-size: 1em}
-    .navbar{
+    nav{
     	height: auto;
     	width: 100%;
-    	font-size: 1em;
     	padding: 1em 1em;
     	justify-content: center;
     	position: relative;
-    	background-color: rgba(0, 78, 203, 1);
     	/*coloumn orientation*/
     	flex-direction: column;
-    	z-index: 1;
     }
-    .navbar span{
-    	margin: 15px;
+    #logo{
+    	margin: 0 0 15px 0;
     }
-
     .row{
     	flex-direction: column;
     	align-items: center;
+    }
+    .item{
+    	flex-direction: column;
     }
     .aligner{
     	display: block;
     }
     #pp{
     	margin: 0;
-    	transform: rotateY(180deg);
+    }
+    .nav-bot{
+    	display: none;
     }
 }
