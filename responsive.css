@@ -42,6 +42,7 @@ nav span{
 	padding: 5px 15px;
 	border: 2px solid white;
 	border-radius: 5px;
+	margin: 15px 5px;
 }
 .dropdown{
 	display: inline-block;
@@ -49,8 +50,8 @@ nav span{
 .dropdown a{
 	text-decoration: none;
 	color: white;
-	transition: font-size .2s;
-	-webkit-transition: font-size .2s;
+	transition: font-size .25s;
+	-webkit-transition: font-size .25s;
 }
 .dropdown a:hover{
 	font-size: 1.1em;
@@ -108,7 +109,6 @@ header.top-header{
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5em;
 	border: none;
-	margin-left: 0;
 }
 .nav-bot{
 	line-height: initial;
@@ -156,6 +156,7 @@ header.top-header{
 	-moz-border-image: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
 	border-image: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
 	border-image-slice: 1;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 }
@@ -233,6 +234,9 @@ header.top-header{
 .col-5{flex: 5;}
 /*mobile phones: */
 @media only screen and (max-width: 768px) {
+	body{
+		font-size: 16px;
+	}
 	h1{font-size: 1.3em}
 	h2{font-size: 1.2em}
 	h3{font-size: 1.1em}
@@ -245,9 +249,6 @@ header.top-header{
 		position: relative;
 		/*coloumn orientation*/
 		flex-direction: column;
-	}
-	#logo{
-		margin: 0 0 15px 0;
 	}
 	.row{
 		flex-direction: column;
@@ -265,9 +266,4 @@ header.top-header{
 	.nav-bot{
 		display: none;
 	}
-}
-iframe{
-	width: 100%;
-	height: 240px;
-	overflow-x: hidden;
 }
