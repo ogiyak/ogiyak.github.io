@@ -124,12 +124,12 @@ header.top-header{
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 20px; /* Place the button at the bottom of the page */
+	bottom: 50px; /* Place the button at the bottom of the page */
 	right: 30px; /* Place the button 30px from the right */
 	z-index: 201; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
-	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+	background: rgb(103, 58, 183); /* For browsers that do not support gradients */
 	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
@@ -140,7 +140,7 @@ header.top-header{
 }
 #myBtn:hover {
 	background: white;
-	color: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
+	color: rgb(103, 58, 183); /* For browsers that do not support gradients */
 }
 /* for contents section*/
 .item{
@@ -265,4 +265,9 @@ header.top-header{
 	.nav-bot{
 		display: none;
 	}
+}
+iframe{
+	width: 100%;
+	height: 240px;
+	overflow-x: hidden;
 }
