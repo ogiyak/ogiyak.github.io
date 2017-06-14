@@ -22,8 +22,8 @@ nav{
 	top: 0;
 	left: 0;
 	margin: 0;
-	padding: 2em 2em;
-	height: 48px;
+	padding: 1em 1em;
+	min-height: 48px;
 	width: 100%;
 	color: white;
 	position: relative;
@@ -81,7 +81,7 @@ header{
 	padding: 0 1em;
 }
 header.top-header{
-	height: 100vh;
+	min-height: 100vh;
 	color: white;
 }
 /*special case image & atmosphere*/
@@ -110,22 +110,12 @@ header.top-header{
 	font-size: 1.5em;
 	border: none;
 }
-.nav-bot{
-	line-height: initial;
-	-webkit-transition: line-height 2s;
-	transition: line-height 2s;
-	-webkit-transition-timing-function: ease;
-	transition-timing-function: ease;
-}
-.nav-bot a:hover{
-	line-height: 5em;
-}
 /*home button src w3school*/
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 50px; /* Place the button at the bottom of the page */
-	right: 30px; /* Place the button 30px from the right */
+	bottom: 70px; /* Place the button at the bottom of the page */
+	right: 15px; /* Place the button 30px from the right */
 	z-index: 201; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
@@ -133,7 +123,7 @@ header.top-header{
 	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
-	width: 68px; height: 68px;
+	width: 64px; height: 64px;
 	border-radius: 50%; /* Rounded corners */
 	-webkit-transition: background .3s, color .3s;
 	transition: background .3s, color .3s;
@@ -146,9 +136,8 @@ header.top-header{
 .item{
 	min-width: 245px;
 	min-height: 245px;
-	font-size: 12px;
-	padding-top: 100%;
-	margin: 2em;
+	font-size: 16px;
+	margin: 1em;
 	box-shadow: 0 5px 1.5em rgba(0,0,0,.3);
 	border: 1em solid transparent; 
 	-webkit-border-image: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
@@ -159,6 +148,12 @@ header.top-header{
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+}
+.item a{
+	border-bottom: 1px solid black;
+}
+.item a:hover{
+	border-bottom: 2px solid black;
 }
 .item-list-top{
 	flex: 1;
@@ -187,7 +182,7 @@ header.top-header{
 	color: white;
 }
 .grad-2{
-	background: rgb(230, 230, 230); /* For browsers that do not support gradients */
+	background: rgb(255, 255, 255); /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(-90deg, rgb(230, 230, 230), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
@@ -210,11 +205,11 @@ header.top-header{
 .container{
 	width: 100%
 	margin: 0;
-	padding: 1em;
+	padding: 1em 1em 2em 1em;
 }
 .row{
+	/*give presence*/
 	min-height: 1em;
-	height: calc(100%-48px);
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -250,12 +245,18 @@ header.top-header{
 		/*coloumn orientation*/
 		flex-direction: column;
 	}
+	.container{
+		padding: 10px 18px 10px 10px;
+	}
 	.row{
 		flex-direction: column;
 		align-items: center;
 	}
+	.col{
+		padding: 10px;
+	}
 	.item{
-		flex-direction: column;
+		border-width: 10px;
 	}
 	.aligner{
 		display: block;
