@@ -1,3 +1,4 @@
+// Top button
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -14,3 +15,14 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+$(document).ready(function(){
+	$(".dropdown").hover(function(){
+	    $("#mask").fadeIn();
+	    // $("#mask").show();
+	}, function(){
+	    // $("#mask").fadeOut();
+		$("#mask").hide();
+	}
+	);
+});
