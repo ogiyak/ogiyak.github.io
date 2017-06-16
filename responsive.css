@@ -85,6 +85,10 @@ header.top-header{
 	min-height: 100vh;
 	color: white;
 }
+figure figcaption{
+	text-align: center;
+	font-size: .9em;
+}
 /*special case image & atmosphere*/
 .aligner{
 	display: flex;
@@ -168,8 +172,8 @@ header.top-header{
 	flex: 1;
 }
 .item-img{
-	padding: 1em;
-	box-shadow: 0 5px 1em rgba(0,0,0,.3);
+	padding: 5px !important;
+	box-shadow: 0 5px 1em rgba(0,0,0,.5);
 }
 .center{
 	align-items: center;
@@ -273,11 +277,5 @@ header.top-header{
 	}
 	.aligner{
 		display: block;
-	}
-	#pp{
-		margin: 0;
-	}
-	.nav-bot{
-		display: none;
 	}
 }

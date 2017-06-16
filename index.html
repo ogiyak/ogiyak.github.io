@@ -29,7 +29,7 @@
 		<nav>
 			<span id="logo"><a href="https://ogiyak.github.io/">@ogiyak</a></span>
 			<div>	
-				<div onmouseover="maskFunction()" class="dropdown">
+				<div class="dropdown">
 					<span class="btn">Social media</span>
 					<div class="dropdown-content">
 						<p><a href="https://www.facebook.com/ogiyoga"><i class="fa fa-facebook" aria-hidden="true"></i> ogi yak</a></p>
@@ -41,7 +41,7 @@
 						<p><a href="https://drive.google.com/file/d/0B3DlMEC4y8zJVDdwWTRObU9HYVk/view?usp=sharing"><i class="fa fa-user" aria-hidden="true"></i> Curriculum Vitae</a></p>
 					</div>
 				</div>
-				<div onmouseover="maskFunction()" class="dropdown">
+				<div class="dropdown">
 					<span class="btn">Contents</span>
 					<div class="dropdown-content">
 						<p><a href="#knowledge">Knowledge</a></p>
@@ -71,12 +71,13 @@
 	<section class="container grad-2" id="knowledge">
 		<header>
 			<h1>Knowledges</h1>
-			<p>“The only source of knowledge is experience” — Albert Einstein. These words inspire & remind me when design. Here are some samples of my knowledges about design just to give you flash-view about how deep I dive.</p>
-		</header>	
+			<p>“The only source of knowledge is experience” — Albert Einstein. It reminded me while designing to stay focused on the user experience. Here are some samples of my knowledges about design just to give you flash-view about how deep I dive.</p>
+		</header>
+		<!-- cited -->
 		<div class="row">
 			<div class="col col-1 item">
 				<p class="item-list-top">User friendly —</p>
-				<h4 class="item-list-mid">In touch mode, give adequate (eg 20px) space between icon and outline. It gives clearance.</h4>
+				<h4 class="item-list-mid">In touch mode, give adequate (eg 20 px) space between icon and outline. It gives clearance.</h4>
 				<p class="item-list-bot">— Google Material Design</p>
 			</div>
 			<div class="col col-1 item">
@@ -90,9 +91,9 @@
 				<p class="item-list-bot">— Layla Hasan (2012)</p>
 			</div>
 			<div class="col col-1 item">
-				<p class="item-list-top">Accessibility —</p>
-				<h4 class="item-list-mid">The contrast ratio between a color and its background ranges from 1-21 based on its luminance, or intensity of light emitted.</h4>
-				<p class="item-list-bot">— World Wide Web Consortium (W3C)</p>
+				<p class="item-list-top">Perceivable —</p>
+				<h4 class="item-list-mid">Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</h4>
+				<p class="item-list-bot">— WCAG 2.0</p>
 			</div>
 		</div>
 		<!-- opinions -->
@@ -126,7 +127,10 @@
 				<p>This is one of my KKN-UGM 2015 project for Science & Technology sector. It's a Website for Desa Wisata Serang, Purbalingga. Faris, Fakhri, and Me developed the Website about 1 month long. Faris worked as backend (Laravel etc), Fakhri made the contents and web-skeletons, and I worked as frontend (Bootstrap etc) & design. CRUD system for maintain the Web's contents is included in the Web.</p>
 			</div>
 			<div class="col col-2">
-				<img src="img/serang.webp" class="item-img">
+				<figure class="item-img">
+					<img src="img/serang.webp">
+					<figcaption>Homepage of www.serangpurbalingga.com</figcaption>
+				</figure>
 			</div>
 		</div>
 		<div class="row">
@@ -135,14 +139,19 @@
 				<p>Adopsi Pohon is our KKN's Leader project which is proposed to help Desa Serang gets more variety of plants and strengthens soil. I helped him creating landing page (Website) and poster. It developed using Bootstrap and basic CSS.</p>
 			</div>
 			<div class="col col-2">
-				<div class="row item-img">
-					<div class="col col-1">
+				<figure>
+				<div class="row">
+					<div class="col col-1 item-img">
 						<img src="img/adopsipohon1.webp">
+						<figcaption>Adopsipohon's homepage</figcaption>
 					</div>
-					<div class="col col-1">
+					<div class="col col-1 item-img">
 						<img src="img/adopsipohon2.webp">
+						<figcaption>Adopsipohon's content</figcaption>
 					</div>
 				</div>
+					
+				</figure>
 			</div>
 		</div>
 		<div class="row">
@@ -151,7 +160,11 @@
 				<p>Allshop is my thesis. It's a prototype of Bussiness-to-Consumer E-commerce. Prototype used to evaluate design development process that lies in User Centered Design and Agile Development researches nowdays. The process uses LeanUX, Scrum, and Design sprint along with some design methode obtained such as Information System Research (ISR), ISO 9241-210, etc.</p>
 			</div>
 			<div class="col col-2">
-				<img src="img/allshop.webp" class="item-img">
+			<figure class="item-img">
+				<img src="img/allshop.webp">
+				<figcaption>It's mobile prototype of my thesis. Do your own test and give a comment on Behance!</figcaption>
+			</figure>
+				
 			</div>
 		</div>
 		<header>
@@ -163,17 +176,22 @@
 				<p>Kanhan500 is a Japan-Korea basic dictionary. It helps us to understand both Kanji (Japan) and Hanja (Korea) characters effectively. Kanhan500 consist 500 Kanji & 500 Hanja characters along with its picture, writing order, and sentence sample. Kanhan500 is product of PIMNAS XXVII PKM-KC 2014. My job was designed it into a real product and prepared all PPTs, Poster, social media etc.</p>
 			</div>
 			<div class="col col-2">
-				<div class="row item-img">
-					<div class="col col-2">
+				<figure>
+					<div class="row">
+					<div class="col col-2 item-img">
 						<img src="img/kanhan1.webp">
+						<figcaption>Kanhan Team spot in PIMNAS</figcaption>
 					</div>
-					<div class="col col-1">
+					<div class="col col-1 item-img">
 						<img src="img/kanhan3.webp">
+						<figcaption>Kanhan500 brocure design</figcaption>
 					</div>
-					<div class="col col-1">
+					<div class="col col-1 item-img">
 						<img src="img/kanhan2.webp">
+						<figcaption>Kanhan500 cover design</figcaption>
 					</div>
-				</div>
+					</div>
+				</figure>
 			</div>
 		</div>
 		<div class="row">
@@ -182,15 +200,20 @@
 				<p>Cembako is startup-coursework. Cembako aims to create stability in market price, override the confusion in any crucial moments. It is both giving factual information of the commodities price analyzed by government, at the same time monitoring and collecting price in traditional market reported by society itself. I'm a CTO in Cemabako's team. I also design apps Wireframe, Catalog, X-banner, and apps UI.</p>
 			</div>
 			<div class="col col-2">
-				<div class="row item-img">
-					<div class="col col-1">
-						<img src="img/cembako1.webp">
+				<figure>
+					<div class="row">
+						<div class="col col-1 item-img">
+							<img src="img/cembako1.webp">
+							<figcaption>Cembako's product description</figcaption>
+						</div>
+						<div class="col col-1 item-img">
+							<img src="img/cembako3.webp">
+							<figcaption>Cembako's team member (1 of 2)</figcaption>
+						</div>
 					</div>
-					<div class="col col-1">
-						<img src="img/cembako3.webp">
-					</div>
-				</div>
+				</figure>
 			</div>
+
 		</div>
 	</section>
 	<section class="container grad-2" id="achievement">
