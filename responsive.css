@@ -31,7 +31,7 @@ nav{
 	justify-content: space-between;
 	z-index: 200;  
 }
-nav *{
+*{
 	/*disable text select*/	
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -93,6 +93,7 @@ figure figcaption{
 	font-size: .9em;
 }
 /*special case image & atmosphere*/
+/*centric content*/
 .aligner{
 	display: flex;
 	align-items: center;
@@ -107,8 +108,9 @@ figure figcaption{
 .aligner .aligner-item{
 	max-width: 100%;
 }
+/*interior*/
 #pp{
-	max-width: 70%;
+	max-width: 75%;
 }
 #pp #img1{
 	opacity: 0.7;
@@ -117,7 +119,6 @@ figure figcaption{
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5em;
 	margin: 15px 5px;
-	border: none;
 }
 /*home button src w3school*/
 #myBtn {
@@ -145,34 +146,31 @@ figure figcaption{
 .item{
 	min-width: 245px;
 	min-height: 245px;
+	height: 100% !important;
+	overflow: hidden;
 	font-size: 16px;
 	margin: 1em;
-	box-shadow: 0 5px 1.5em rgba(0,0,0,.3);
-	border: 1em solid transparent; 
+	box-shadow: 0 5px 1em rgba(0,0,0,.3);
+	border: 5px solid; 
 	-webkit-border-image: -webkit-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
 	-o-border-image: -o-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
 	-moz-border-image: -moz-linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
 	border-image: linear-gradient(-90deg, rgba(0, 78, 203, 1), rgb(103, 58, 183)); /* Standard syntax */
-	border-image-slice: 1;
+	border-image-slice: 0;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
-.item a{
-	border-bottom: 1px solid black;
-}
-.item a:hover{
-	border-bottom: 2px solid black;
+.item:hover{
+	border-image-slice: 1
 }
 .item-list-top{
-	flex: 1;
 	text-align: right;
 }
 .item-list-mid{
-	flex: 2;
 }
 .item-list-bot{
-	flex: 1;
 }
 .item-img{
 	padding: 5px !important;
@@ -235,18 +233,20 @@ figure figcaption{
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .col{
-	padding: 15px;
+	padding: 15px; 
 }
 .col *{
 	max-width: 100%;
 }
 .col-1{flex: 1}
-.col-2{flex: 2;}
-.col-3{flex: 3;}
-.col-4{flex: 4;}
-.col-5{flex: 5;}
+.col-2{flex: 2}
+.col-3{flex: 3}
+.col-4{flex: 4}
+.col-5{flex: 5}
 /*mobile phones: */
 @media only screen and (max-width: 768px) {
 	body{
