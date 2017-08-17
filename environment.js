@@ -19,10 +19,15 @@ function topFunction() {
 $(document).ready(function(){
 	$(".dropdown").hover(function(){
 	    $("#mask").fadeIn();
-	    // $("#mask").show();
 	}, function(){
-	    // $("#mask").fadeOut();
 		$("#mask").hide();
-	}
-	);
+	});
+	$(".item").on("click", function(){
+		if ($(".popup").css("display") == "none") {
+			$(".popup").css("display", "block");
+		}else{
+			$(".popup").css("display", "none");
+		}
+	    
+	});
 });
