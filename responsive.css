@@ -13,6 +13,9 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 400;
 }
 h1{font-size: 2em}
+p{
+	line-height: 1.5em;
+}
 hr{
 	-webkit-border-image: -webkit-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
 	-o-border-image: -o-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
