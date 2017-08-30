@@ -2,6 +2,7 @@
 /*color :*/
 /*blue rgba(0, 78, 203, 1)*/
 /*purple rgba(103, 58, 183)*/
+/*pink rgb(244, 67, 52);*/
 body{
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
@@ -17,11 +18,16 @@ p{
 	line-height: 1.5em;
 }
 hr{
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 3px solid;
 	-webkit-border-image: -webkit-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
 	-o-border-image: -o-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
 	-moz-border-image: -moz-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
 	border-image: linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* Standard syntax */
 	border-image-slice: 1;
+
 }
 nav{
 	display: flex;
@@ -108,33 +114,15 @@ figure figcaption{
 	text-align: center;
 	font-size: .9em;
 }
-/*special case image & atmosphere*/
-/*centric content*/
-.aligner{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.aligner-start{
-	justify-content: flex-start;
-}
-.aligner-end{
-	justify-content: flex-end;
-}
-.aligner .aligner-item{
-	max-width: 100%;
-}
 /*interior*/
-#pp{
-	max-width: 75%;
-}
-#pp #img1{
-	opacity: 0.7;
-}
 #logo{
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5em;
 	margin: 15px 5px;
+}
+#photo-profile{
+	max-width: 75%;
+	opacity: 0.75;
 }
 /*home button src w3school*/
 #myBtn {
@@ -204,17 +192,29 @@ figure figcaption{
 	transform: rotateY(5deg);
 	width: 90%;
 }
-.center{
+.v-center{
 	align-items: center;
+}
+.v-left{
+	align-items: flex-start;
+}
+.v-right{
+	align-items: flex-end;
+}
+.h-center{
+	justify-content: center;
 	text-align: center;
 }
-.left{
-	align-items: flex-start;
+.h-left{
+	justify-content: flex-start;
 	text-align: left;
 }
-.right{
-	align-items: flex-end;
+.h-right{
+	justify-content: flex-end;
 	text-align: right;
+}
+.strech{
+	justify-content: space-between;
 }
 .grad-1{
 	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
@@ -297,7 +297,7 @@ figure figcaption{
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.9);
 	-webkit-transition: background-color .25s;
 	transition: background-color .25s;
 }
@@ -393,11 +393,11 @@ body::-webkit-scrollbar-thumb {
 		flex-direction: column;
 	}
 	.container{
-		padding: 10px 10px 18px 10px;
+		padding: 10px 10px 18px 10px !important;
 	}
 	.row{
 		flex-direction: column;
-		align-items: center;
+		/*align-items: center;*/
 	}
 	.col{
 		padding: 10px;
@@ -405,7 +405,8 @@ body::-webkit-scrollbar-thumb {
 	.item{
 		border-width: 10px;
 	}
-	.aligner{
-		display: block;
+	#photo-profile{
+		max-width: 100%;
+		margin-right: -20px;
 	}
 }
