@@ -1,7 +1,7 @@
 /*library*/
 /*color :*/
-/*blue rgba(0, 78, 203, 1)*/
-/*purple rgba(103, 58, 183)*/
+/*blue rgb(0, 78, 203)*/
+/*purple rgb(103, 58, 183)*/
 /*pink rgb(244, 67, 52);*/
 body{
 	font-size: 18px;
@@ -22,10 +22,10 @@ hr{
 	border-left: 0px;
 	border-right: 0px;
 	border-top: 3px solid;
-	-webkit-border-image: -webkit-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
-	-o-border-image: -o-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
-	-moz-border-image: -moz-linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
-	border-image: linear-gradient(90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* Standard syntax */
+	-webkit-border-image: -webkit-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
+	-o-border-image: -o-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
+	-moz-border-image: -moz-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
+	border-image: linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* Standard syntax */
 	border-image-slice: 1;
 
 }
