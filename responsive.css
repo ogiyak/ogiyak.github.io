@@ -220,10 +220,10 @@ figure figcaption{
 }
 .grad-1{
 	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* Standard syntax */
+	background: -webkit-linear-gradient(0deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(0deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(0deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(0deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* Standard syntax */
 	color: white;
 }
 .grad-2{
