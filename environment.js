@@ -15,19 +15,11 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
-
+// shadow effects
 $(document).ready(function(){
-	$(".dropdown").hover(function(){
+	$(".top-header .btn-group").hover(function(){
 	    $("#mask").fadeIn();
 	}, function(){
 		$("#mask").hide();
-	});
-	$(".item").on("click", function(){
-		if ($(".popup").css("display") == "none") {
-			$(".popup").css("display", "block");
-		}else{
-			$(".popup").css("display", "none");
-		}
-	    
 	});
 });

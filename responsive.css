@@ -1,8 +1,16 @@
 /*library*/
 /*color :*/
 /*blue rgb(0, 78, 203)*/
+/*new darkblue rgb(0,31,66)*/
+/*new lightblue rgb(0,70,109)*/
+/*new superlightblue rgb(65,113,155)*/
 /*purple rgb(103, 58, 183)*/
 /*pink rgb(244, 67, 52);*/
+/*darkpink rgb(185,0,10)*/
+*{
+	transition: color .2s ease, background-color .2s ease;
+	-webkit-transition: color .2s ease, background-color .2s ease;
+}
 body{
 	font-size: 17px;
 	font-family: 'Roboto', sans-serif;
@@ -24,12 +32,8 @@ hr{
 	border-bottom: 0px;
 	border-left: 0px;
 	border-right: 0px;
-	border-top: 3px solid;
-	-webkit-border-image: -webkit-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Safari 5.1 to 6.0 */
-	-o-border-image: -o-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Opera 11.1 to 12.0 */
-	-moz-border-image: -moz-linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* For Firefox 3.6 to 15 */
-	border-image: linear-gradient(-90deg, rgb(41, 121, 255), rgb(103, 58, 183)); /* Standard syntax */
-	border-image-slice: 1;
+	border-top: 1px solid;
+	border-color: white;
 }
 nav{
 	display: flex;
@@ -52,11 +56,11 @@ ul{
 ul.unstyled{
 	list-style: none;
 }
-li{
-	padding-bottom: .7em;
+* a:hover{
+	color: rgb(255,121,95) !important;
 }
 i.fa{
-	letter-spacing: 15px;
+	letter-spacing: 7px;
 }
 /*Footer*/
 footer{
@@ -90,17 +94,12 @@ footer{
 	display: none;
 	position: absolute;
 	padding: 10px 10px;
-	box-sizing: border-box;
 }
 .dropdown:hover{
 	cursor: pointer;
 }
 .dropdown:hover .dropdown-content{
 	display: block;
-}
-.dropdown:hover .btn{
-	background-color: white;
-	color: black;
 }
 header{
 	padding: 0 1em;
@@ -117,10 +116,11 @@ figure figcaption{
 	font-size: .9em;
 }
 /*interior*/
-#logo{
+#logo a{
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5em;
 	margin: 15px 5px;
+	color: white;
 }
 #photo-profile{
 	max-width: 75%;
@@ -135,17 +135,16 @@ figure figcaption{
 	z-index: 201; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
-	background: rgb(95, 95, 196); /* For browsers that do not support gradients */
+	background: rgb(0,31,66); /* For browsers that do not support gradients */
 	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	width: 64px; height: 64px;
 	border-radius: 50%; /* Rounded corners */
-	-webkit-transition: background .3s, color .3s;
-	transition: background .3s, color .3s;
+	box-shadow: 0 5px 1em rgba(0,0,0,.2);
 }
 #myBtn:hover{
-	background: rgb(0, 16, 100);
+	background: rgb(65,113,155);
 	color: white;
 }
 /* for contents section*/
@@ -156,28 +155,20 @@ figure figcaption{
 	overflow: hidden;
 	/*font-size: 1em;*/
 	margin: 1em;
-	box-shadow: 0 5px 1em rgba(0,0,0,.2);
-	border: 5px solid; 
-	-webkit-border-image: -webkit-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Safari 5.1 to 6.0 */
-	-o-border-image: -o-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Opera 11.1 to 12.0 */
-	-moz-border-image: -moz-linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Firefox 3.6 to 15 */
-	border-image: linear-gradient(-45deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* Standard syntax */
-	border-image-slice: 0;
+	box-shadow: 0 1px .2em rgba(0,0,0,.2);
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	transition: box-shadow .2s ease;
 }
 .item:hover{
-	border-image-slice: 1
+	box-shadow: 0 15px 15px rgba(0,0,0,.2);
+	transform: scale(1.005, 1.005);
 }
 .item-list-top{
 	text-align: right;
 	font-weight: bold;
-}
-.item-list-mid{
-}
-.item-list-bot{
 }
 .item-img{
 	padding: 5px !important;
@@ -219,11 +210,11 @@ figure figcaption{
 	justify-content: space-between;
 }
 .grad-1{
-	background: rgba(0, 78, 203, 1); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(180deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(180deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(180deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(180deg, rgba(0, 78, 203, 1), rgb(103, 58, 183), rgb(244, 67, 53)); /* Standard syntax */
+	background: rgb(0,70,109); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(90deg, rgb(65,113,155), rgb(0,70,109)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(90deg, rgb(65,113,155), rgb(0,70,109)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(90deg, rgb(65,113,155), rgb(0,70,109)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(90deg, rgb(65,113,155), rgb(0,70,109)); /* Standard syntax */
 	color: white;
 }
 .grad-2{
@@ -239,27 +230,14 @@ figure figcaption{
 	text-decoration: none;
 }
 .grad-2 a{
-	color: rgba(0, 78, 203, 1);
+	color: black;
 	text-decoration: none;
-	transition: color .2s;
 }
-.grad-2 a:hover{
-	color: rgba(0, 150, 250, 1);
-}
-.grad-2 h1{
-	color: rgb(244, 67, 52);
+.grad-2 h1, .grad-2 h2, grad-2 h3{
+	color: rgb(244, 67, 52) !important;
 	font-weight: bold;
 }
-.grad-2 h2{
-	background: rgba(103, 58, 183); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(-90deg, rgb(103, 58, 183), rgba(0, 78, 203, 1)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(-90deg, rgb(103, 58, 183), rgba(0, 78, 203, 1)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(-90deg, rgb(103, 58, 183), rgba(0, 78, 203, 1)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(-90deg, rgb(103, 58, 183), rgba(0, 78, 203, 1)); /* Standard syntax */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: bold;
-}
+/*buttons*/
 .btn{
 	border: 2px solid;
 	border-color: transparent;
@@ -268,10 +246,10 @@ figure figcaption{
 	margin: 0 15px 15px 0;
 	background-color: rgb(230, 230, 230);
 	font-size: 1em;
+	cursor: pointer;
 }
 .btn:hover{
-	cursor: pointer;
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 }
 .btn-group{
 	display: inline-block;
@@ -280,8 +258,10 @@ figure figcaption{
 .btn-metal{
 	border-color: white;
 	background-color: transparent;
-	-webkit-transition: background-color 0.25s;
-	transition: background-color 0.25s;
+}
+.btn-metal:hover{
+	background-color: transparent;
+	border-color: rgb(255,121,95);
 }
 .btn-link{
 	background-color: transparent;
@@ -296,8 +276,6 @@ figure figcaption{
 	height: 100vh;
 	z-index: 100;
 	background-color: rgba(0,0,0,.9);
-	-webkit-transition: background-color .25s;
-	transition: background-color .25s;
 }
 /*popup dev*/
 div.popup{
@@ -312,15 +290,15 @@ div.popup{
 .popup #description{
 	background-color: rgb(0,0,0);
 }
-/*scroll bar (purple)*/
+/*scroll bar (new blue)*/
 body::-webkit-scrollbar{
     width: .5em;
 }
 body::-webkit-scrollbar-track{
-    background-color: rgb(95, 95, 196);
+    background-color: rgb(0,31,66);
 }
 body::-webkit-scrollbar-thumb{
-  	background-color: rgb(0, 16, 100);
+  	background-color: rgb(65,113,155);
  	/*outline: 1px solid slategrey;*/
  	border-radius: 5px;
 }
