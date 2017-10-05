@@ -4,12 +4,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("totop").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("totop").style.display = "none";
     }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
@@ -17,7 +16,7 @@ function topFunction() {
 }
 // shadow effects
 $(document).ready(function(){
-	$(".top-header .btn-group").hover(function(){
+	$("nav .btn-group").hover(function(){
 	    $("#mask").fadeIn();
 	}, function(){
 		$("#mask").hide();
