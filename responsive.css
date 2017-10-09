@@ -171,17 +171,18 @@ figure figcaption{
 }
 .item-img{
 	padding: 5px !important;
+	background-color: white;
+	box-shadow: 0 15px 30px rgba(0,0,0,.3);
 	margin: 15px;
 	perspective: 900px;
 	text-align: center;
 }
 .item-img img{
 	padding: 5px;
-	box-shadow: 0 15px 30px rgba(0,0,0,.3);
 }
 .item-img .windowed{
 	transform: rotateY(5deg);
-	-webkit-transform: rotateY(7deg);
+	-webkit-transform: rotateY(5deg);
 	width: 90%;
 }
 /*flex aligner*/
