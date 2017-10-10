@@ -263,8 +263,13 @@ figure figcaption{
 }
 .btn-link{
 	background-color: transparent;
-	padding: 0px 5px !important;
+	padding: 3px !important;
 	margin: 0;
+	text-align: unset;
+	color: rgb(0, 78, 203);
+}
+.btn-link:hover{
+	background-color: rgb(240, 240, 240);
 }
 #mask{
 	display: none;
@@ -381,5 +386,8 @@ body::-webkit-scrollbar-thumb{
 	#photo-profile{
 		max-width: 100%;
 		margin-right: -25px;
+	}
+	.item-img{
+		margin: 5px;
 	}
 }

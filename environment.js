@@ -21,4 +21,7 @@ $(document).ready(function(){
 	}, function(){
 		$("#mask").hide();
 	});
+	$(".dropdown a").click(function(){
+		$("#mask").hide();
+	});
 });
