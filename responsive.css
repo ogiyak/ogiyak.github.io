@@ -169,6 +169,10 @@ figure figcaption{
 	text-align: right;
 	font-weight: bold;
 }
+.item a{
+	color: rgb(0,70,109) !important;
+	font-weight: bolder;
+}
 .item-img{
 	padding: 5px !important;
 	background-color: white;
@@ -260,16 +264,6 @@ figure figcaption{
 .btn-metal:hover{
 	background-color: transparent;
 	border-color: rgb(255,121,95);
-}
-.btn-link{
-	background-color: transparent;
-	padding: 3px !important;
-	margin: 0;
-	text-align: unset;
-	color: rgb(0, 78, 203);
-}
-.btn-link:hover{
-	background-color: rgb(240, 240, 240);
 }
 #mask{
 	display: none;
