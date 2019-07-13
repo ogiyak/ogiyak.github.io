@@ -19,9 +19,10 @@ $(document).ready(function(){
 	$("nav .btn-group").hover(function(){
 	    $("#mask").fadeIn();
 	}, function(){
-		$("#mask").hide();
+		$("#mask").fadeOut();
+		// $("#mask").hide();
 	});
 	$(".dropdown a").click(function(){
-		$("#mask").hide();
+		$("#mask").fadeOut();
 	});
 });
