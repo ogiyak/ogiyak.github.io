@@ -5,11 +5,11 @@
 		@ogiyak
 	</title>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 	<link href="responsive.css" rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/b86967208a.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<meta name="author" content="ogi yak">
 	<meta name="description" content="Portofolio">
@@ -27,43 +27,33 @@
 </head>
 <body>
 	<header class="container top-header grad-1">
-		<nav>
-			<div id="logo"><a href="https://ogiyak.github.io/">@ogiyak</a></div>
-			<div class="btn-group">	
-				<div class="dropdown">
-					<span class="btn btn-metal">Social Media ↓</span>
-					<div class="dropdown-content">
-						<p><a href="https://www.facebook.com/ogiyoga"><i class="fa fa-facebook" aria-hidden="true"></i> ogi yak</a></p>
-						<p><a href="https://twitter.com/ogiyak"><i class="fa fa-twitter" aria-hidden="true"></i> @ogiyak</a></p>
-						<p><a href="https://ogiyak.blogspot.co.id/"><i class="fa fa-rss" aria-hidden="true"></i> ogiyak.blogspot.com</a></p>
-						<p><a href="https://www.behance.net/ogiyak"><i class="fa fa-behance" aria-hidden="true"></i> Ogi Yak</a></p>
-						<p><a href="https://www.instagram.com/ogi.yak/"><i class="fa fa-instagram" aria-hidden="true"></i> ogi.yak</a></p>
-						<p><a href="https://drive.google.com/file/d/1Q_AAINAMZgeQyNbcPolwFJ3CdBu-fNKR/view?usp=sharing"><i class="fa fa-user" aria-hidden="true"></i> Curriculum Vitae</a><span class="tag">2019</span></p>
-					</div>
-				</div>
-				<div class="dropdown">
-					<span class="btn btn-metal">Contents ↓</span>
-					<div class="dropdown-content">
-						<p><a href="#knowledge">Knowledge</a></p>
-						<p><a href="#portfolio">Portfolio</a></p>
-						<p><a href="#achievement">Achievement</a></p>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<section class="row v-center" style="margin-top: -1em;">
+		<div class="row v-center middle">
 			<div class="col col-1 h-right">
-				<img src="img/png/pp.png" id="photo-profile" alt="My temporary image.">
+				<img src="img/png/pp color.png" id="photo-profile" alt="My temporary image.">
 			</div>
 			<div class="col col-1">
-				<h1>Ogi Yak <span style="font-weight: 100;">(Ogi)</span></h1>
-				<h2 style="color: white;">Product &middot; UI &middot; UX Designer
-					<br><span style="font-weight: 100; color: rgba(255, 255, 255, 1)">D.I.Y. 2019</span>
-				</h2>
+				<h1 style="margin: 0 0 8px 0; background: -webkit-linear-gradient(45deg, #0e0e0e, #2e2e2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ogiyak</h1>
+				<div>Product &middot; UI &middot; UX Designer</div>
 			</div>
-		</section>
-		<section></section>
+		</div>
 	</header>
+	<div class="menu">
+		<a href="#knowledge">Knowledges <span class="hover-arrow">&rarr;</span></a>
+		<a href="#portfolio">Portfolios <span class="hover-arrow">&rarr;</span></a>
+		<a href="#achievement">Achievements <span class="hover-arrow">&rarr;</span></a>
+		<div class="dropdown">
+			<a>Contacts<span class="hover-arrow">&rarr;</span></a>
+			<div class="dropdown-content">
+				<a href="https://www.linkedin.com/in/ogi-yoga-abi-kuncoro/" target="new tab" style="color: #0077b5 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fab fa-linkedin"></i> ogi yak</a>
+				<a href="https://www.facebook.com/ogiyoga" target="new tab" style="color: #3b5998 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fab fa-facebook"></i> ogi yak</a>
+				<a href="https://twitter.com/ogiyak" target="new tab" style="color: #1da1f2 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fab fa-twitter"></i> ogiyak</a>
+				<a href="https://www.instagram.com/ogi.yak/" target="new tab" style="color: #f56040 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fab fa-instagram"></i> ogi.yak</a>
+				<a href="https://ogiyak.blogspot.co.id/" target="new tab" style="color: #f57d00 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fab fa-blogger"></i> ogiyak.blogspot</a>
+				<hr>
+				<a href="https://drive.google.com/file/d/1Q_AAINAMZgeQyNbcPolwFJ3CdBu-fNKR/view?usp=sharing" target="new tab" style="color: #000000 !important;" onmouseover="hoverColor(this)" onmouseout="hoverNormal(this)"><i class="fas fa-user"></i> Curriculum Vitae (2019)</a>
+			</div>
+		</div>
+	</div>
 	<section class="container grad-2" id="knowledge">
 		<header>
 			<h1>Chapter 1 - Knowledges</h1>
@@ -101,44 +91,44 @@
 				<p class="item-list-bot">— Me</p>
 			</div>
 			<div class="col col-1 item">
-				<p class="item-list-top">Iteration & Time Span</p>
-				<p class="item-list-mid">Two main ideas in agile development are Iteration and Time span. Iteration is more natural than making perfection. Time span means giving a special time which duration is set. Time span may give motivation. Related talk: <a href="https://www.youtube.com/watch?v=arj7oStGLkU">Inside the mind of a master procrastinator.</a></p>
-				<p class="item-list-bot">— Me</p>
-			</div>
-			<div class="col col-1 item">
 				<p class="item-list-top">Natural Design</p>
 				<p class="item-list-mid">Luke Wroblewski talked about input-form and natural design in Conversions, 2017. He told about design solution that not always screen, e.g IOT Smarthome, Tide Pods, etc. He said "What did you do? Are you designing just by moving pixels?". Then he explained natural design, which is based on natural way of human interactions.</p>
 				<p class="item-list-bot">— <a href="https://twitter.com/lukew">Luke Wroblewski</a></p>
 			</div>
+			<div class="col col-1 item">
+				<p class="item-list-top">Iteration & Time Span</p>
+				<p class="item-list-mid">Two main ideas in agile development are Iteration and Time span. Iteration is more natural than making perfection. Time span means giving a special time which duration is set. Time span may give motivation. Related talk: <a href="https://www.youtube.com/watch?v=arj7oStGLkU">Inside the mind of a master procrastinator.</a></p>
+				<p class="item-list-bot">— Me</p>
+			</div>
 		</div>
 		<div class="row h-center">
-			<a href="https://ogiyak.blogspot.co.id/" target="_blank"><button class="btn"><i class="fa fa-external-link" aria-hidden="true"></i> Blogger</button></a>
-			<a href="https://medium.com/@ogiyak/tap-able-button-bd55b11b614d" target="_blank"><button class="btn"><i class="fa fa-medium" aria-hidden="true"></i> Medium</button></a>
+			<a href="https://ogiyak.blogspot.co.id/" target="new tab"><button class="btn"><i class="fab fa-blogger"></i> Blogger</button></a>
+			<a href="https://medium.com/@ogiyak/tap-able-button-bd55b11b614d" target="new tab"><button class="btn"><i class="fab fa-medium"></i> Medium</button></a>
 		</div>
 	</section>
 	<section class="container grad-2" id="portfolio">
 		<header>
 			<h1>Chapter 2 - Portfolios</h1>
 			<p>Recorded projects and works lays here. The projects sparated into Web and Printed projects.</p>
-			<h2>Web projects</h2>
+			<h2><i class="fas fa-desktop"></i>Web projects</h2>
 		</header>	
 		<div class="row">
 			<div class="col col-1">
-				<h3><a href="http://serangpurbalingga.com/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Serangpurbalingga.com</a></h3>
-				<span class="highlight">Unavailable</span>
-				<p>This is one of my KKN-UGM 2015 Science and Technology project. It's a website for Desa Wisata Serang, Purbalingga. We developed the website for about 2 months. CRUD system for maintain the web's contents is included. Web contents are variant: strawberry, tourism, nature, organization etc.</p>
+				<h3><a href="http://serangpurbalingga.com/" target="new tab"><i class="fas fa-external-link-alt"></i> Serangpurbalingga.com</a></h3>
+				<span class="highlight">Discontinued</span>
+				<p>This is one of my KKN-UGM 2015 Science and Technology project. A responsive website for Desa Wisata Serang, Purbalingga. We developed the website for about 2 months, including the admin page for articles management. My part is to make user interface using bootstrap and some customized css.</p>
 			</div>
 			<div class="col col-2">
 				<figure class="item-img">
 					<img src="img/png/serang.jpg" alt="">
-					<figcaption>Homepage of www.serangpurbalingga.com (Design may change do to upcoming KKNs Tim)</figcaption>
+					<figcaption>Homepage of www.serangpurbalingga.com (Design may change do to upcoming KKNs Team)</figcaption>
 				</figure>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col col-1">
-				<h3><a href="https://ogiyak.github.io/adopsipohon/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Adopsi Pohon</a></h3>
-				<p>It is my KKN's leader project which is proposed to help Desa Serang gets more variety of plants and strengthens soil. I helped him creating landing page (website) and poster. It developed using Bootstrap and basic HTML/CSS.</p>
+				<h3><a href="https://ogiyak.github.io/adopsipohon/" target="new tab"><i class="fas fa-external-link-alt"></i> Adopsi Pohon</a></h3>
+				<p>It is my KKN's leader project proposed to help Desa Serang gets more variety plants and to strengthens the soil. I helped him creating responsive landing page and poster. It developed using Bootstrap and some basic HTML & CSS.</p>
 			</div>
 			<div class="col col-2">
 				<figure>
@@ -158,27 +148,27 @@
 		</div>
 		<div class="row">
 			<div class="col col-1">
-				<h3><a href="https://ogiyak.github.io/allshop/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> allshop</a></h3>
+				<h3><a href="https://ogiyak.github.io/allshop/" target="new tab"><i class="fas fa-external-link-alt"></i> allshop</a></h3>
 				<p>allshop is my thesis's object. It's a prototype of Bussiness-to-Consumer E-commerce. Prototype used to evaluate design development process lies on User Centered Design and Agile Development researches nowdays. The process uses collaboration and summary of LeanUX, Scrum, and Design sprint along with some design methodes such as Information System Research (ISR), ISO 9241-210, etc.</p>
 			</div>
 			<div class="col col-2">
 			<figure class="item-img">
 				<img src="img/png/allshop.jpg">
-				<figcaption>It's the first allshop prototype. Check it out: <a href="https://www.behance.net/gallery/53182203/Mobile-B2C-e-commerce-concept-(Coursework)">Behance</a></figcaption>
+				<figcaption>It's the first allshop prototype. Check it out: <a href="https://www.behance.net/gallery/53182203/Mobile-B2C-e-commerce-concept-(Coursework)" target="new tab">Behance</a></figcaption>
 			</figure>
 			<figure class="item-img">
 				<img src="img/png/allshopgithub.jpg">
-				<figcaption>It's the second cycle prototype of allshop. Check it out: <a href="https://ogiyak.github.io/allshop/">ogiyak.github.io/allshop</a>. It's a pure mobile web scale.</figcaption>
+				<figcaption>It's the second cycle prototype of allshop. Check it out: <a href="https://ogiyak.github.io/allshop/" target="new tab">ogiyak.github.io/allshop</a>. It's a pure mobile web scale size.</figcaption>
 			</figure>
 				
 			</div>
 		</div>
 		<header>
-			<h2>Printed projects</h2>
+			<h2><i class="fas fa-book"></i>Printed projects</h2>
 		</header>
 		<div class="row">
 			<div class="col col-1">
-				<h3><a href="https://www.facebook.com/kamuskanhan500/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Kanhan500</a></h3>
+				<h3><a href="https://www.facebook.com/kamuskanhan500/" target="new tab"><i class="fas fa-external-link-alt"></i> Kanhan500</a></h3>
 				<p>Kanhan500 is a Japan-Korea basic dictionary. It helps us to understand both Kanji (Japan) and Hanja (Korea) characters effectively. Kanhan500 consist 500 Kanji and 500 Hanja characters along with its picture, writing order, and sentence samples. Kanhan500 is product of PIMNAS XXVII PKM-KC 2014. My job was designed it into a real product and prepared all PPTs, Poster, social media etc.</p>
 			</div>
 			<div class="col col-2">
@@ -202,8 +192,8 @@
 		</div>
 		<div class="row">
 			<div class="col col-1">
-				<h3><a href="https://www.facebook.com/cembako/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Cembako</a></h3>
-				<p>Cembako is startup-coursework. Cembako aims to create stability in market price, override the confusion in any crucial moments. It is both giving factual information of the commodities price analyzed by government, at the same time monitoring and collecting price in traditional market reported by society itself. I'm a CTO in Cemabako's team. I also design apps wireframe, catalog, x-banner, and apps UI.</p>
+				<h3><a href="https://www.facebook.com/cembako/" target="new tab"><i class="fas fa-external-link-alt"></i> Cembako</a></h3>
+				<p>Cembako is startup-coursework. Cembako aims to create stability in market price, override the confusion in any special events. The main function is to giving factual information about commodities price analyzed by government and also to monitoring prices in traditional markets reported by society itself. I was the CTO and also design apps wireframe, catalog, x-banner, and apps UI.</p>
 			</div>
 			<div class="col col-2">
 				<figure>
@@ -214,15 +204,15 @@
 						</div>
 						<div class="col col-1 item-img">
 							<img src="img/png/cembako3.jpg">
-							<figcaption>Cembako's team member (1 of 2)</figcaption>
+							<figcaption>Cembako's team member</figcaption>
 						</div>
 					</div>
 				</figure>
 			</div>
 		</div>
 		<div class="row h-center">
-			<a href="https://www.instagram.com/ogi.yak/" target="_blank"><button class="btn"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</button></a>
-			<a href="https://goo.gl/photos/bZaLVA39iyV3PexR8" target="_blank"><button class="btn"><i class="fa fa-picture-o" aria-hidden="true"></i> Design Showcase - Google photos</button></a>
+			<a href="https://www.instagram.com/ogi.yak/" target="new tab"><button class="btn"><i class="fab fa-instagram"></i> Instagram</button></a>
+			<a href="https://goo.gl/photos/bZaLVA39iyV3PexR8" target="new tab"><button class="btn"><i class="far fa-images"></i> Design Showcase - Google photos</button></a>
 		</div>
 	</section>
 	<section class="container grad-2" id="achievement">
@@ -233,58 +223,57 @@
 		<div class="row">
 			<div class="col col-1 item-img">
 				<p>TOEFL ITP Score 527 at 2015</p>
-				<img src="img/png/certificate1.jpg" class="windowed">
+				<img src="img/png/certificate1.jpg">
 			</div>
-			<div class="col col-1 item-img" class="windowed">
-				<p>Lumia Apps Olympiad 1st Place KrazyMarket Category. <a href="https://youtu.be/gQN9IaPovCI?list=LL58AM0dX7VS6ve8LDAuJZyg" target="_blank">Video here.</a></p>
+			<div class="col col-1 item-img">
+				<p>Lumia Apps Olympiad 1st Place KrazyMarket Category. <a href="https://youtu.be/gQN9IaPovCI?list=LL58AM0dX7VS6ve8LDAuJZyg" target="new tab">Video here.</a></p>
 				<img src="img/png/certificate2.jpg" class="windowed">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col col-1 item-img">
 				<P>Innovative Academy 2015</P>
-				<img src="img/png/certificate3.jpg" class="windowed">
+				<img src="img/png/certificate3.jpg">
 			</div>
 			<div class="col col-1 item-img">
 				<p>PIMNAS XXVII PKM-KC "Produksi Kamus Kanhan500" 2014</p>
-				<img src="img/png/certificate4.jpg" class="windowed">
+				<img src="img/png/certificate4.jpg">
 			</div>
 		</div>
 		<div class="row h-center">
-			<a href="https://goo.gl/photos/hoJhjzQ2WF9aJr6YA" target="_blank"><button class="btn"><i class="fa fa-picture-o" aria-hidden="true"></i> More - Google photos</button></a>
+			<a href="https://goo.gl/photos/hoJhjzQ2WF9aJr6YA" target="new tab"><button class="btn"><i class="far fa-images"></i> More - Google photos</button></a>
 		</div>
 	</section>
-	<button onclick="topFunction()" id="totop" title="Click to go to top"><span class="fa fa-chevron-up" aria-hidden="true"></span></button>
+	<button onclick="topFunction()" id="totop" title="Click to go to top"><span class="fas fa-chevron-up"></span></button>
 	<footer class="container grad-1">
 		<header>
-			<h1 style="color: rgba(255,255,255,.3);">About</h1>
+			<h1>About</h1>
 		</header>
 		<div class="row">
 			<div class="col">
-				<img src="img/png/jobstreet.jpg" class="pp pp-2">
+				<img src="img/png/pp color.png" class="pp pp-2">
 			</div>
 			<div class="col col-4">
 				<ul class="unstyled">
-					<li><b>Ogi Yoga Abi Kuncoro (Ogi)</b></li>
-					<li><p><a href="https://drive.google.com/file/d/1Q_AAINAMZgeQyNbcPolwFJ3CdBu-fNKR/view?usp=sharing"></i> Curriculum Vitae 2019</a></p></li>
+					<li><b>Ogi Yoga Abi Kuncoro</b></li>
+					<li><a href="https://drive.google.com/file/d/1Q_AAINAMZgeQyNbcPolwFJ3CdBu-fNKR/view?usp=sharing" target="new tab"></i> Curriculum Vitae (2019)</a></li>
 				</ul>
 			</div>
 			<div class="col col-4">
 				<ul class="unstyled">
-					<li><i class="fa fa-map-marker" aria-hidden="true"></i> <b>Address</b></li>
-					<li><p>Jalan Letkol Subadri, Danen, Sumberadi, Mlati<br>Sleman, D.I. Yogyakarta<br>Indonesia (55288)</p></li>
+					<li><i class="fas fa-map-marker-alt"></i> <b>Address</b></li>
+					<li>Sleman, D.I. Yogyakarta<br>Indonesia (55288)</li>
 				</ul>
 			</div>
 			<div class="col col-4">
 				<ul class="unstyled">
-					<li><i class="fa fa-envelope" aria-hidden="true"></i> <b>Mail</b></li>
-					<li><p><a href="mailto:klasikfriend@gmail.com" target="_top"> klasikfriend@gmail.com</a></p></li>
+					<li><i class="far fa-envelope"></i> <b>Mail</b></li>
+					<li><a href="mailto:klasikfriend@gmail.com" target="_top"> klasikfriend@gmail.com</a></li>
 				</ul>
 			</div>
 		</div>
 	</footer>
-	<div class="h-center" style="color: rgba(0,0,0,0.7); padding-bottom: 8px; font-size: 12px; position: relative; bottom: 0; left: 0; width: 100vw;">Yogyakarta Indonesia, 2018</div>
-	<div id="mask"></div>
+	<div class="h-center" style="color: rgba(0,0,0,0.7); padding-bottom: 8px; font-size: 12px; position: relative; bottom: 0; left: 0; width: 100vw;">Yogyakarta Indonesia, 2021</div>
 	<script src="environment.js"></script>
 </body>
 </html>
