@@ -124,7 +124,7 @@ header{
 	padding: 0 1em;
 }
 header.top-header{
-	height: 100%;
+	height: auto;
 	color: black !important;
 	min-height: calc(0.4*100vh);
 	justify-content: space-between;
@@ -515,14 +515,11 @@ i{
 	.row{
 		flex-direction: column;
 	}
-	#photo-profile{
-		max-width: 100%;
-	}
 	header .top-header{
 		min-height: calc(50vh);
 	}
 	#photo-profile{
-		width: 160px;
+		width: 140px;
 	}
 	.col{
 		padding-top: 0;
